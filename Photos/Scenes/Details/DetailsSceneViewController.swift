@@ -41,6 +41,7 @@ final class DetailsSceneViewController: UIViewController, DetailsSceneDisplayLog
     
     var titleLabel: UILabel = {
         let view = UILabel()
+        view.numberOfLines = 0
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()

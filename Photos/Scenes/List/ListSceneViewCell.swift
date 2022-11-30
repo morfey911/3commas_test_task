@@ -14,7 +14,7 @@ final class ListSceneViewCell: UITableViewCell {
     lazy var photoImageView: UIImageView = {
         let imageView = UIImageView()
         
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         
         return imageView

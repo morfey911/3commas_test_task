@@ -40,9 +40,14 @@ final class ListSceneViewController: UIViewController {
     
     // MARK: - View lifecycle
     
+    override func loadView() {
+        super.loadView()
+        self.configureUI()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.configureUI()
+//        self.configureUI()
         self.interactor?.loadPhotos()
     }
     
